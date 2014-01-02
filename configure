@@ -3,5 +3,5 @@
 if [ "$(ls -A Derelict3/lib/dmd)" ]; then
 	cd Derelict3/build
 	dmd build.d
-	./build GL3 SDL2
+	./build GL3 SDL2 Util
 fi
