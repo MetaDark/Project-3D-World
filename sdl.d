@@ -1,12 +1,13 @@
 import std.stdio;
 import std.string;
+import matrix;
 
-import derelict.opengl3.gl;
+import derelict.opengl3.gl3;
 import derelict.sdl2.sdl;
 
 void main() {
   // Dynamically link OpenGL 3 and SDL 2 libraries
-  DerelictGL.load();
+  DerelictGL3.load();
   DerelictSDL2.load();
 
   // Create window
