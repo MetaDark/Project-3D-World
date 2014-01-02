@@ -1,5 +1,6 @@
+.o
+archive
+
 # Hidden files
 *~
 .*
-
-archive
