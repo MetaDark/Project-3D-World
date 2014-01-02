@@ -1,7 +1,17 @@
 #!/bin/sh
 
-if [ "$(ls -A Derelict3/lib/dmd)" ]; then
+# Download Derelict3 module
+if [ ! "$(ls -A Derelict3)" ]; then
+	cd Derelict3
+	git submodule init
+	git submodule update
+	cd -
+fi
+
+# Build libraries
+if [ ! "$(ls -A Derelict3/lib/dmd)" ]; then
 	cd Derelict3/build
 	dmd build.d
 	./build GL3 SDL2 Util
+	cd -
 fi
