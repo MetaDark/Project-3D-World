@@ -1,4 +1,4 @@
 Project-3D-World
 ================
 
-A random 3D world proeject
+A random 3D world project
