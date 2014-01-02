@@ -9,7 +9,7 @@ if [ ! "$(ls -A Derelict3)" ]; then
 fi
 
 # Build libraries
-if [ ! "$(ls -A Derelict3/lib/dmd)" ]; then
+if [ ! "$(ls lib*.a Derelict3/lib/dmd)" ]; then
 	cd Derelict3/build
 	dmd build.d
 	./build GL3 SDL2 Util
